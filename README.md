@@ -9,6 +9,15 @@ This installer addresses three primary barriers to running the standard Linux bi
 2. **Virtual Address Space Limit (TCMalloc `MmapAligned` failure)**: Solved by applying a pattern-based memory patch shifting pointers from 48-bit to 39-bit memory maps.
 3. **Missing Hardware Atomic Instructions (`sigill-fail-fast`)**: Solved by wrapping execution with QEMU AArch64 emulation (`-cpu max`).
 
+## Prerequisites
+
+> [!WARNING]
+> **Do not use the Google Play Store version of Termux.** The Play Store build has been deprecated since 2020. The package manager repositories are broken, and modern binaries will fail to execute due to Android API constraints.
+>
+> You must install a clean, up-to-date version of Termux from one of these official sources:
+> * **[F-Droid](https://f-droid.org/en/packages/com.termux/)**
+> * **[GitHub Releases](https://github.com/termux/termux-app/releases)**
+
 ## Installation
 
 Run the following command directly in your Termux terminal to install:
