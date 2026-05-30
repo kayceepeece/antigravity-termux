@@ -36,6 +36,18 @@ After the installation completes:
    agy --version
    ```
 
+## Updating
+
+To quickly update the Antigravity CLI without upgrading all system packages again, you can run the update alias:
+```bash
+agy-update
+```
+
+Alternatively, you can run the update command manually:
+```bash
+curl -fsSL https://raw.githubusercontent.com/kayceepeece/antigravity-termux/main/install.sh | bash -s -- --update
+```
+
 ## License
 
 This project is open-source and licensed under the MIT License.
